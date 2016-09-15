@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+
+/* ============================================================================
+ * トップページ　モジュール 開閉コンテンツ
+ * ========================================================================= */
+
+.site-id-index .ac-container {
+  text-align: center;
+}
+
+.site-id-index .ac-container label:not(.m-form_lyt) {
+  width: 100%;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.site-id-index .ac-container label:not(.m-form_lyt):hover{
+  background: rgba(255,255,255,0.10);
+}
+
+.site-id-index .ac-container label:not(.m-form_lyt):after, .site-id-index .ac-container input:checked + label:not(.m-form_lyt):after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 400px;
+  top: 10px;
+  background: transparent url(../img/top_addsearch-down.png) no-repeat center center;
+}
+
+.site-id-index .ac-container input:checked + label:hover:after {
+  background-image: url(../img/top_addsearch-up.png);
+}
+.site-id-index .ac-container input {
+  display: none;
+}
+
+.site-id-index .ac-container article {
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+}
+
+
+
+.site-id-index .ac-container input:checked ~ article.ac-inner {
+  height: auto;
+}
+
+
+
+/* ============================================================================
+ * 病院詳細ページ　モジュール 開閉コンテンツ
+ * ========================================================================= */
+.site-id-hospital .ac-container {
+  width: 100%;
+  padding: 35px;
+  margin: 0 0 30px 0;
+  background: #ffffff;
+  box-shadow: 3px 3px 0 0 #dfdfdf;
+  border-radius: 5px;
+}
+
+.site-id-hospital .ac-container label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.site-id-hospital .ac-container label:after, .site-id-hospital .ac-container input:checked + label:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+  background: transparent url(../img/arrow_down.png) no-repeat center center;
+}
+
+.site-id-hospital .ac-container input:checked + label:hover:after {
+  background-image: url(../img/arrow_up.png);
+}
+
+.site-id-hospital .ac-container input {
+  display: none;
+}
+
+.site-id-hospital .ac-container article {
+  background: #ffffff;
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+}
+
+
+
+.site-id-hospital .ac-container input:checked ~ article.ac-inner {
+  height: auto;
+}
+
+
+/* ============================================================================
+ * 病院詳細ページ　モジュール 展開後コンテンツレイアウト
+ * ========================================================================= */
+
+.site-id-hospital .ac-inner_table {
+  display: table;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.site-id-hospital .ac-inner_cell {
+  display: table-cell;
+  vertical-align: top;
+  border-collapse: collapse;
+  padding-right: 50px;
+}
+
+.site-id-hospital .ac-inner_map {
+  display: inline-block;
+  text-align: right;
+}
+
+.site-id-hospital .ac-inner h4 {
+  padding: 20px 20px 0 20px;
+}
+
+.site-id-hospital .ac-inner .question h5, .site-id-hospital .ac-inner .question_02 h5 {
+  padding: 20px 20px 0 20px;
+}
+
+.site-id-hospital .ac-inner .question p, .site-id-hospital .ac-inner .question_02 p {
+  padding: 20px;
+  font-size: 0.9em;
+  border-bottom: dashed 1px #79aec9;
+}
+
+.site-id-hospital .ac-inner .question:first-child, .site-id-hospital .ac-inner .question_02:first-child {
+  margin-top: 20px;
+}
+
+.site-id-hospital .ac-inner .question_02:nth-child(odd) {
+  background-color: #f0f5fa;
+}
+
+
+/* ============================================================================
+ * ファイル先頭 コメント
+ * ========================================================================= */
+/* ----------------------------------------------------------------------------
+ * セクション コメント
+ * ------------------------------------------------------------------------- */
+/* ------------------------------------
+ * サブセクション コメント
+ * --------------------------------- */
+/*
+ * 複数行コメント1行目
+ * 複数行コメント2行目
+ */
+/* 単一行コメント */

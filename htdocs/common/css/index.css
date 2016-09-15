@@ -1,0 +1,325 @@
+/* ============================================================================
+ * トップページ オープニングアニメーション
+ * ========================================================================= */
+.m-openning {
+  width: 100%;
+  height: 100%;
+  min-width: 1100px;
+  background: url(../img/top_main_bg.png) repeat-x #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: anim2 3s linear;
+  z-index: -30000;
+}
+
+.m-openning > div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.m-openning-image-outer {
+  display: inline-block;
+  margin-top: 50px;
+}
+.m-openning-image {
+  color: #000000;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.5em;
+  white-space: nowrap;
+  animation: anim1 5s linear;
+}
+.m-openning-image-outer img {
+  display: inline-block;
+  margin: 50px 0;
+}
+
+/* @keyframes anim1{
+  from {
+    font-size: 3rem;
+    letter-spacing: 0.5em;
+    transform: rotate(0deg);
+    z-index: 30000;
+  } 
+  to {
+    transform: rotate(0deg);
+  }
+} */
+@keyframes anim2{
+  0% {
+    opacity: 1;
+    z-index: 30000;
+  } 
+  50% {
+    opacity: 1;
+    z-index: 30000;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+/* ============================================================================
+ * ボディ
+ * ========================================================================= */
+.site-id-index {
+  width: 100%;
+  min-width: 1100px;
+  background: url(../img/top_main_bg.png) repeat-x;
+  padding-top: 120px;
+}
+
+
+/* ============================================================================
+ * トップページ キービジュアルスライダー
+ * ========================================================================= */
+.slider-keyvisual {
+  width: 100%;
+  text-align: center;
+  margin: 100px auto 0 auto;
+}
+
+
+/* ============================================================================
+ * トップページ main
+ * ========================================================================= */
+.site-id-index .s-main {
+  padding-bottom: 100px;
+}
+
+
+/* ============================================================================
+ * トップページ 共通小見出し
+ * ========================================================================= */
+.site-id-index .s-main h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 2.4rem;
+  font-family: "游明朝体", "Yu Mincho", YuMincho;
+}
+.site-id-index .s-main h2:after {
+  display: block;
+  content: "";
+  width: 20%;
+  margin: 15px auto 0 auto;
+  border-bottom: dotted 1px #cccccc;
+}
+
+
+/* ============================================================================
+ * トップページ ごあいさつエリア
+ * ========================================================================= */
+.s-content-body .s-outer {
+  width: 100%;
+  position: relative;
+  background: #ffffff;
+  padding-bottom: 80px;
+}
+.s-content-body .s-outer:before, .s-content-body .s-outer:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 50px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #aaaaaa;
+  -webkit-box-shadow: 0 15px 20px #cccccc;
+  -moz-box-shadow: 0 15px 20px #cccccc;
+  box-shadow: 0 15px 20px #cccccc;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.s-content-body .s-outer:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 50px;
+  left: auto;
+}
+
+.s-content-body .m-outer-photo {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+.s-content-body .s-inner {
+  margin: 60px auto 0 auto;
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode:vertical-rl;
+}
+.s-content-body .m-outer-photo + .s-inner {
+  margin-top: 30px;
+}
+.s-content-body .s-inner h3 {
+  margin-right: 10px;
+  font-size: 1.8rem;
+  line-height: 2;
+  letter-spacing: 0.2em;
+}
+.s-content-body .s-inner p {
+  margin: 0 30px 0 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2.5;
+  letter-spacing: 0.2em;
+  height: 25em;
+  margin-top: 10px;
+}
+
+.s-content-body .s-inner figure {
+  margin-top: 10px;
+  height: 20em;
+}
+.s-content-body .s-inner figure figcaption {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0.2em;
+  margin-top: 10px;
+}
+
+.s-content-body .s-inner h4 {
+  margin-right: 10px;
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+.s-content-body .s-inner h4:nth-child(n + 3) {
+  margin-right: 60px;
+  padding-right: 20px;
+  border-right: dotted 1px #999999;
+}
+.s-content-body .s-inner h4 span {
+  margin-top: 2em;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.s-content-body .s-inner ul {
+  margin: 0 30px 0 15px;
+  height: 24em;
+}
+.s-content-body .s-inner li {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+.s-content-body .s-inner li a {
+  display: inline-block;
+  padding: 10px;
+  background: #eeeeee;
+  border-radius: 18px;
+}
+.s-content-body .s-inner li a:hover {
+  background: #dddddd;
+  color: #333333;
+  text-decoration: none;
+}
+
+.s-content-body .s-inner address {
+  margin-right: 30px;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+/* ============================================================================
+ * モジュール Google Map
+ * ========================================================================= */
+#map_canvas {
+  margin-right: 20px;
+  width: 400px;
+  height: 300px;
+  letter-spacing: 0;
+  writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+  -webkit-writing-mode:horizontal-tb;
+}
+
+/* ============================================================================
+ * ページトップ動画
+ * ========================================================================= */
+.top-imagevideo {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -10000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -ms-filter: "alpha(opacity=40)";
+}
+
+
+/* ============================================================================
+ * トップお問合せフォーム
+ * ========================================================================= */
+.s-content-body .s-inner .m-form_list {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-align: left;
+}
+.s-content-body .s-inner .m-form_list li {
+  writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+  -webkit-writing-mode:horizontal-tb;
+}
+.s-content-body .s-inner .m-form_sub {
+  display: inline-block;
+}
+
+.m-form_list .m-form_lyt-txt, .m-form_list .m-form_lyt-input {
+  display: block;
+}
+.m-form_list .m-form_lyt-txt {
+  font-weight: 700;
+}
+.m-form_list .m-form_lyt-txt span {
+  display: inline-block;
+  color: #bf000a;
+  font-size: 0.8em;
+}
+.m-form_list input, .m-form_list textarea {
+  border: solid 1px #333333;
+}
+
+.m-form_sub [type="submit"] {
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 5px 30px;
+  border: solid 1px #333333;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+.m-form_sub button:hover,
+.m-form_sub button:focus,
+.m-form_sub button:active {
+  background: #dddddd;
+  margin-top: 23px;
+}
