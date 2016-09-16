@@ -1,4 +1,4 @@
-/* slick.jsのスライダー動き設定 */
+﻿/* slick.jsのスライダー動き設定 */
 $("document").ready(function(){
 $('.slider-keyvisual').slick({
 slidesToShow: 2.5,
@@ -13,13 +13,13 @@ responsive:[{
 			breakpoint: 960,
 			settings:{
 				arrows: false,
-				slidesToShow: 3
+				slidesToShow: 2.5
 	  		}
 		},
 		{
 			breakpoint: 640,
 			settings:{
-				slidesToShow: 1
+				slidesToShow: 2.5
 			}
 		}]
 });
