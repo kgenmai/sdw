@@ -4,7 +4,7 @@
 
 #index .s-outer {
   width: 100%;
-  font-family: '游明朝','Yu Mincho';
+  font-family: '游明朝','Yu Mincho',serif;
 }
 
 #index .s-header {
@@ -70,7 +70,7 @@
 
 .m-flexbox-outer p {
   width: 400px;
-  font-size: 30em;
+  font-size: 15em;
   padding: 1px;
   text-align: center;
 }
