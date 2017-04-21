@@ -2,9 +2,54 @@
  * トップページ
  * ========================================================================= */
 
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-ExtraLight.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.otf) format('opentype');
+ }
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-Medium.otf) format('opentype');
+ }
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-SemiBold.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Serif Japanese';
+   font-style: normal;
+   font-weight: 700;
+  src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.otf) format('opentype');
+ }
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 900;
+  src: url(fonts/NotoSerifCJKjp/NotoSerifCJKjp-Black.otf) format('opentype');
+ }
+
+
+
 #index .s-outer {
   width: 100%;
-  font-family: '游明朝' ,'Yu Mincho' ,"Sawarabi Mincho" ,serif;
+  font-family: '游明朝' ,'Yu Mincho' ,"Noto Serif Japanese" ,serif;
 }
 
 #index .s-header {
